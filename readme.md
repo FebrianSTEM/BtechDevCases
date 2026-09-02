@@ -65,3 +65,18 @@ fields are: recipient, amount, and notes
 - Tests (unit or integration)
 
 This keeps the scope tight: just registration, login, and a protected “Hello [email]” flow.
+
+## Answer
+I Successfuly develop backend and a little chappy ui for that cover all the tasks. 
+Here is the preview of my solution for the tasks.
+
+
+You can also see this as the documentation of the API service [here](./APIDocument.md).
+
+## How To Run it
+To run my solution you can choose to run manually or run it on docker using docker compose below provide the instructions how to run in method of your choice.
+### Run Manual
+To Run Manual Please refer to this [Manual Setup](./ManualSetup.md)
+
+### Run On Docker
+To Run using Docker Compose Please refer to this [Docker Setup](./DockerSetup.md)

@@ -1,0 +1,47 @@
+services:
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: authwallet-sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "${MSSQL_SA_PASSWORD}"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    networks:
+      - authwallet-network
+
+  backend:
+    build:
+      context: .
+      dockerfile: AuthWallet.Api/Dockerfile
+    container_name: authwallet-backend
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ConnectionStrings__DefaultConnection: "Server=sqlserver,1433;Database=AuthWalletDb;User Id=sa;Password=${MSSQL_SA_PASSWORD};TrustServerCertificate=True"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - sqlserver
+    networks:
+      - authwallet-network
+
+  frontend:
+    build:
+      context: ./AuthWallet.frontend
+      dockerfile: Dockerfile
+    container_name: authwallet-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - authwallet-network
+
+networks:
+  authwallet-network:
+
+volumes:
+  sqlserver_data:

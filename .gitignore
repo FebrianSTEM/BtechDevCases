@@ -1,0 +1,172 @@
+# =========================
+
+# .NET / Visual Studio
+
+# =========================
+
+## Build output
+
+[Bb]in/
+[Oo]bj/
+
+## Visual Studio
+
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio Code
+
+.vscode/
+
+## Rider / JetBrains
+
+.idea/
+*.sln.iml
+
+## NuGet
+
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+project.lock.json
+project.fragment.lock.json
+
+## Logs
+
+*.log
+
+## Test results
+
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# =========================
+
+# ASP.NET Core
+
+# =========================
+
+## User secrets
+
+secrets.json
+
+## Development certificates
+
+*.pfx
+
+## Local configuration
+
+appsettings.Development.json
+appsettings.Local.json
+
+# =========================
+
+# Entity Framework
+
+# =========================
+
+## EF Core generated files
+
+obj/
+bin/
+
+# =========================
+
+# Docker
+
+# =========================
+
+## Docker local environment
+
+.env
+.env.*
+!.env.example
+
+# =========================
+
+# OS files
+
+# =========================
+
+## Windows
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+## macOS
+
+.DS_Store
+
+# =========================
+
+# Temporary files
+
+# =========================
+
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# =========================
+
+# Database / Local data
+
+# =========================
+
+*.db
+*.sqlite
+*.sqlite3
+
+# =========================
+
+# Publish output
+
+# =========================
+
+publish/
+*.publishsettings
+*.pubxml.user
+
+# =========================
+
+# JetBrains
+
+# =========================
+
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# =========================
+
+# Generated files
+
+# =========================
+
+Generated/
+*.generated.cs
+
+# =========================
+
+# OS / IDE
+
+# =========================
+
+*.cache
+*.pidb
+*.pdb
+*.opendb
+*.ncb
+*.sdf
+*.bak
+*.orig
+*.rej
