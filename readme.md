@@ -80,11 +80,30 @@ To run my solution you can choose to run manually or run it on docker using dock
 To Run Manual Please refer to this [Manual Setup](./ManualSetup.md)
 ### Run On Docker
 To Run using Docker Compose Please refer to this [Docker Setup](./DockerSetup.md)
-### Adjustment Balance, FE Allowed PORT and Inactivity Timeout
-<b>Default Balance<b/>
-You can adjust Balance by changing DefaultBalance value in appsettings.json on \AuthWallet.Api\appsettings.json
-<b>FE Allowed Port<b/>
-You can adjust Balance by changing AllowedOrigins value in appsettings.json on \AuthWallet.Api\appsettings.json
-<b>Inactivity Timeout<b/>
-You can adjust Balance by changing InactivityTimeoutMinutes value in appsettings.json on \AuthWallet.Api\appsettings.json
+### Adjustment: Balance, FE Allowed Port, and Inactivity Timeout
+
+**Default Balance**
+
+You can adjust the default wallet balance by changing the `DefaultBalance` value in:
+
+```text
+\AuthWallet.Api\appsettings.json
+```
+
+**FE Allowed Port**
+
+You can configure the allowed frontend origin by changing the `AllowedOrigins` value in:
+
+```text
+\AuthWallet.Api\appsettings.json
+```
+
+**Inactivity Timeout**
+
+You can configure the inactivity timeout by changing the `InactivityTimeoutMinutes` value in:
+
+```text
+\AuthWallet.Api\appsettings.json
+```
+
 ![appsettings.json](appsettings.png)
