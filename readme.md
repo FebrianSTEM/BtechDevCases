@@ -70,6 +70,7 @@ This keeps the scope tight: just registration, login, and a protected “Hello [
 I Successfuly develop backend and a little chappy ui for that cover all the tasks. 
 Here is the preview of my solution for the tasks.
 
+[Watch Demo](./docs/demo.mp4)
 
 You can also see this as the documentation of the API service [here](./APIDocument.md).
 
@@ -77,6 +78,13 @@ You can also see this as the documentation of the API service [here](./APIDocume
 To run my solution you can choose to run manually or run it on docker using docker compose below provide the instructions how to run in method of your choice.
 ### Run Manual
 To Run Manual Please refer to this [Manual Setup](./ManualSetup.md)
-
 ### Run On Docker
 To Run using Docker Compose Please refer to this [Docker Setup](./DockerSetup.md)
+### Adjustment Balance, FE Allowed PORT and Inactivity Timeout
+<b>Default Balance<b/>
+You can adjust Balance by changing DefaultBalance value in appsettings.json on \AuthWallet.Api\appsettings.json
+<b>FE Allowed Port<b/>
+You can adjust Balance by changing AllowedOrigins value in appsettings.json on \AuthWallet.Api\appsettings.json
+<b>Inactivity Timeout<b/>
+You can adjust Balance by changing InactivityTimeoutMinutes value in appsettings.json on \AuthWallet.Api\appsettings.json
+![appsettings.json](appsettings.png)
