@@ -118,7 +118,7 @@ https://localhost:7215/swagger
 Go to the frontend directory:
 
 ```bash
-cd frontend
+cd AuthWallet.frontend
 ```
 
 Install dependencies:
@@ -195,7 +195,7 @@ dotnet run --project AuthWallet.Api
 **Terminal 3 — Frontend**
 
 ```bash
-cd frontend
+cd AuthWallet.frontend
 npm run dev
 ```
 
@@ -214,7 +214,7 @@ After everything has been configured:
 dotnet run --project AuthWallet.Api
 
 # Terminal 2
-cd frontend
+cd AuthWallet.frontend
 npm run dev
 ```
 
