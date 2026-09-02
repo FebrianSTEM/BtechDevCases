@@ -245,7 +245,8 @@ export default function TransferPage() {
                       </td>
                       <td className="text-sm">{tx.notes || "—"}</td>
                       <td className="text-muted text-xs">
-                        {new Date(tx.createdAt).toLocaleTimeString([], {
+                        {new Date(tx.createdAt).toLocaleString("id-ID", {
+                          timeZone: "Asia/Jakarta",
                           hour: "2-digit",
                           minute: "2-digit",
                           month: "short",
